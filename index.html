@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Services Showcase</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-950;
+        }
+        .service-item.active .chevron-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-950 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-gray-900 p-6 sm:p-10 rounded-3xl shadow-2xl w-full max-w-4xl">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white text-center mb-2">
+            Professional IT Services
+        </h1>
+        <p class="text-gray-400 text-center mb-8">
+            Explore a detailed list of my services with real-world examples.
+        </p>
+
+        <div id="services-list" class="space-y-4">
+
+            <!-- Category: Support & Maintenance -->
+            <div class="service-item bg-gray-800 rounded-xl p-4 shadow-sm cursor-pointer transition-all duration-300 hover:bg-gray-700">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-lg sm:text-xl font-bold text-blue-300">1. Support & Maintenance</h2>
+                    <svg class="chevron-icon w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="service-content mt-4 hidden">
+                    <p class="text-gray-300 mb-2">
+                        I provide expert support to keep your technology running smoothly. From solving technical glitches to protecting your data, I ensure your systems are reliable and secure.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-400">
+                        <li>**Example:** A client's PC is running slow. I diagnose and remove a malware infection, and optimize the system for better performance.</li>
+                        <li>**Example:** A small business needs a reliable backup solution. I set up an automated cloud backup system to protect their critical files and business data.</li>
+                        <li>**Example:** I diagnose and repair a broken laptop screen for a student who needs their computer for coursework.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Category: Networking & Connectivity -->
+            <div class="service-item bg-gray-800 rounded-xl p-4 shadow-sm cursor-pointer transition-all duration-300 hover:bg-gray-700">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-lg sm:text-xl font-bold text-blue-300">2. Networking & Connectivity</h2>
+                    <svg class="chevron-icon w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="service-content mt-4 hidden">
+                    <p class="text-gray-300 mb-2">
+                        I help you get and stay connected with secure and efficient network setups for both homes and offices.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-400">
+                        <li>**Example:** I assist a small startup with setting up their office network, including a firewall configuration and Wi-Fi access points for employees.</li>
+                        <li>**Example:** A family has poor Wi-Fi signal in parts of their home. I install a mesh network and Wi-Fi extenders to ensure full coverage.</li>
+                        <li>**Example:** I troubleshoot and fix a business's slow internet connection by analyzing their network traffic and diagnosing router issues.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Category: Web & Cloud Services -->
+            <div class="service-item bg-gray-800 rounded-xl p-4 shadow-sm cursor-pointer transition-all duration-300 hover:bg-gray-700">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-lg sm:text-xl font-bold text-blue-300">3. Web & Cloud Services</h2>
+                    <svg class="chevron-icon w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="service-content mt-4 hidden">
+                    <p class="text-gray-300 mb-2">
+                        From designing a professional website to migrating your data to the cloud, I help you establish a powerful online presence.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-400">
+                        <li>**Example:** I design and launch a new portfolio website for a freelance photographer using a user-friendly CMS like WordPress or Squarespace.</li>
+                        <li>**Example:** A company wants to move their files from a local server to Dropbox. I handle the entire migration process to ensure a smooth transition with no data loss.</li>
+                        <li>**Example:** I configure and secure a business's professional email accounts and provide training on cloud-based collaboration tools.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Category: Business & Data Solutions -->
+            <div class="service-item bg-gray-800 rounded-xl p-4 shadow-sm cursor-pointer transition-all duration-300 hover:bg-gray-700">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-lg sm:text-xl font-bold text-blue-300">4. Business & Data Solutions</h2>
+                    <svg class="chevron-icon w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="service-content mt-4 hidden">
+                    <p class="text-gray-300 mb-2">
+                        I use SQL, Python, and ERP knowledge to help businesses make data-driven decisions and streamline their operations.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-400">
+                        <li>**Example:** I develop a Python script to automate a weekly sales report, saving the company hours of manual data entry and analysis.</li>
+                        <li>**Example:** I create a dashboard in a business intelligence tool to track key performance indicators (KPIs) like customer retention and revenue growth.</li>
+                        <li>**Example:** I assist a business with the integration of a new ERP system, ensuring a smooth transition of data and business processes.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Category: Consultation & Training -->
+            <div class="service-item bg-gray-800 rounded-xl p-4 shadow-sm cursor-pointer transition-all duration-300 hover:bg-gray-700">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-lg sm:text-xl font-bold text-blue-300">5. Consultation & Training</h2>
+                    <svg class="chevron-icon w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="service-content mt-4 hidden">
+                    <p class="text-gray-300 mb-2">
+                        I provide expert advice and training to empower you to make smarter technology decisions and operate more efficiently.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-400">
+                        <li>**Example:** I consult with a non-profit organization to help them choose and implement a new, cost-effective CRM system.</li>
+                        <li>**Example:** I lead a training session for a team on how to use Microsoft Excel's advanced features, such as pivot tables and VLOOKUP.</li>
+                        <li>**Example:** I conduct a cybersecurity training seminar for a company's employees, teaching them how to spot phishing emails and protect sensitive data.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Category: Specialized Services -->
+            <div class="service-item bg-gray-800 rounded-xl p-4 shadow-sm cursor-pointer transition-all duration-300 hover:bg-gray-700">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-lg sm:text-xl font-bold text-blue-300">6. Specialized Services</h2>
+                    <svg class="chevron-icon w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="service-content mt-4 hidden">
+                    <p class="text-gray-300 mb-2">
+                        I offer niche services to enhance your living or work environment with modern technology.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-400">
+                        <li>**Example:** I install and configure a smart thermostat, video doorbell, and smart lighting system for a homeowner.</li>
+                        <li>**Example:** I set up a client's new home theater system, including wiring, speaker placement, and audio calibration for optimal performance.</li>
+                        <li>**Example:** I assist a small media studio with setting up and maintaining their audio/video editing workstations.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceItems = document.querySelectorAll('.service-item');
+
+            serviceItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const content = item.querySelector('.service-content');
+                    const isActive = item.classList.toggle('active');
+
+                    if (isActive) {
+                        content.style.display = 'block';
+                        // Optional: Add an animation for a smoother transition
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    } else {
+                        content.style.display = 'none';
+                        content.style.maxHeight = '0px';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
